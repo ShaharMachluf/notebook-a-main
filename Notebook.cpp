@@ -10,21 +10,20 @@ Notebook::Notebook(){
     cout<<this->line_size<<endl;
 }
 
-void Notebook::write(unsigned int page, unsigned int row, unsigned int column, Direction direction, string to_write){
+void Notebook::write(unsigned int page, unsigned int row, unsigned int column, Direction direction, string const &to_write) const{
     cout<<this->line_size<<endl;
 }
 
-string Notebook::read(unsigned int page, unsigned int row, unsigned int column, Direction direction, int to_read){
+string Notebook::read(unsigned int page, unsigned int row, unsigned int column, Direction direction, int to_read) const{
     cout<<this->line_size<<endl;
     return("ok");
 }
 
-void Notebook::erase(unsigned int page, unsigned int row, unsigned int column, Direction direction, int to_erase){
+void Notebook::erase(unsigned int page, unsigned int row, unsigned int column, Direction direction, int to_erase) const{
     cout<<this->line_size<<endl;
 }
 
-void Notebook::show(unsigned int page){
-    page--;
+void Notebook::show(unsigned int page) const{
     cout<<this->line_size<<endl;
 }
 
