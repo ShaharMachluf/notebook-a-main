@@ -7,26 +7,28 @@ using namespace std;
 using namespace ariel;
 
 Notebook::Notebook(){
-    return;
+    cout<<this->line_size<<endl;
 }
 
 void Notebook::write(unsigned int page, unsigned int row, unsigned int column, Direction direction, string to_write){
-    return;
+    cout<<this->line_size<<endl;
 }
 
 string Notebook::read(unsigned int page, unsigned int row, unsigned int column, Direction direction, int to_read){
+    cout<<this->line_size<<endl;
     return("ok");
 }
 
 void Notebook::erase(unsigned int page, unsigned int row, unsigned int column, Direction direction, int to_erase){
-    return;
+    cout<<this->line_size<<endl;
 }
 
 void Notebook::show(unsigned int page){
-    return;
+    page--;
+    cout<<this->line_size<<endl;
 }
 
 Notebook::~Notebook(){
-    return;
+    cout<<this->line_size<<endl;
 }
 

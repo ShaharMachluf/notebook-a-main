@@ -67,5 +67,6 @@ TEST_CASE("Erase"){
     notebook.erase(2,3,8, Direction::Vertical,3);
     CHECK(nospaces(notebook.read(2,5,5,Direction::Horizontal,4)) == nospaces("~~~~"));
     CHECK(nospaces(notebook.read(2,3,8, Direction::Vertical,3)) == nospaces("~\n~\n~"));
+    CHECK_THROWS(notebook.write(2,5,5,Direction::Horizontal,"ef"));
 }
 
