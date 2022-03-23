@@ -27,6 +27,8 @@ Notebook notebook;
 TEST_CASE("Bad input"){
     CHECK_THROWS(notebook.write(1, 5, 101, Direction::Horizontal, "abcd"));
     CHECK_THROWS(notebook.write(1, 5, 99, Direction::Horizontal, "abcd"));
+    CHECK_THROWS(notebook.write(1, 5, 99, Direction::Horizontal, "a\t"));
+    CHECK_THROWS(notebook.write(1, 5, 99, Direction::Horizontal, "a\n"));
 }
 
 TEST_CASE("Read") {
